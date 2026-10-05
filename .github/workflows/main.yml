@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./BoostApp_No_YML # <--- GitHub Actions akan otomatis masuk ke folder ini
+        working-directory: ./boost-fps
 
     steps:
       - name: Checkout Repository
@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: BoostApp_No_YML/app/build/outputs/apk/debug/app-debug.apk
+          path: boost-fps/app/build/outputs/apk/debug/app-debug.apk
